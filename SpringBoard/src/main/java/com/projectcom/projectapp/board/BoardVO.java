@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class BoardVO {
 	private int seq;
+	private int grade;
 	private String category;
 	private String title;
 	private String writer;
@@ -52,5 +53,11 @@ public class BoardVO {
 	}
 	public void setCategory(String category) {
 		this.category = category;
+	}
+	public int getGrade() {
+		return grade;
+	}
+	public void setGrade(int grade) {
+		this.grade = grade;
 	}
 }

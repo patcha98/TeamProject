@@ -45,6 +45,7 @@
 	<th>카테고리</th>
 	<th>제목</th>
 	<th>글쓴이</th>
+	<th>학년</th>
 	<th>내용</th>
 	<th>등록일</th>
 	<th>수정</th>
@@ -56,6 +57,7 @@
 		<td>${u.category}</td>
 		<td>${u.title}</td>
 		<td>${u.writer}</td>
+		<th><a href="gradeBoard/${u.grade}">${u.grade}</a></th>
 		<td>${u.content}</td>
 		<td>${u.regdate}</td>
 		<td><a href="editform/${u.seq}">글수정</a></td>
