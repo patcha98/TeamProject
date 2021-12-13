@@ -19,10 +19,11 @@
 	<tr><td>제목:</td><td><form:input path="title"/></td></tr>
 	<tr><td>글쓴이:</td><td><form:input path="writer" /></td></tr>
 	<tr><td>학년:</td><td><form:input path="grade" /></td></tr>
+	<tr><td>이메일:</td><td><form:input path="email" /></td></tr>
 	<tr><td>내용:</td><td><form:textarea cols="50" rows="5" path="content" /></td></tr>
 	</table>
 	<input type="submit" value="수정하기"/>
-	<input type="button" value="취소하기" onclick="location.href='list'"/>
+	<button type="button" onclick="location.href='../list'">취소하기</button>
 </form:form>
 
 </body>

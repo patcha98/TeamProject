@@ -38,6 +38,22 @@ public class BoardDAO {
 		return list;
 	}
 	
+	public List<BoardVO> getGrade1BoardList(){
+		List<BoardVO> list = sqlSession.selectList("Board.getGrade1BoardList");
+		return list;
+	}
+	public List<BoardVO> getGrade2BoardList(){
+		List<BoardVO> list = sqlSession.selectList("Board.getGrade2BoardList");
+		return list;
+	}
+	public List<BoardVO> getGrade3BoardList(){
+		List<BoardVO> list = sqlSession.selectList("Board.getGrade3BoardList");
+		return list;
+	}
+	public List<BoardVO> getGrade4BoardList(){
+		List<BoardVO> list = sqlSession.selectList("Board.getGrade4BoardList");
+		return list;
+	}
 	/*
 	 * public int insertBoard(BoardVO vo) {
 	 * System.out.println("===> JDBC로 insertBoard() 기능 처리"); try { conn =

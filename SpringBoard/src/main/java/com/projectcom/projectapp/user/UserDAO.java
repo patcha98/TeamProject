@@ -1,9 +1,11 @@
 package com.projectcom.projectapp.user;
 
 import org.mybatis.spring.SqlSessionTemplate;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.projectcom.projectapp.board.BoardVO;
 import com.projectcom.projectapp.board.UserVO;
 
 @Repository
@@ -18,5 +20,11 @@ public class UserDAO {
 		int result = sqlSession.insert("User.insertAdmin");
 		return result;
 	}
+	
+	public int insertBoard(UserVO vo) {
+		int result = sqlSession.insert("User.insertUser", vo);
+		return result;
+	}
+	
 
 }

@@ -19,10 +19,12 @@ public class BoardController {
 		return "list";
 	}
 	
+	
 	@RequestMapping(value = "/board/add", method = RequestMethod.GET)
 	public String addPost() {
 		return "addpostform";
 	}
+	
 	
 	@RequestMapping(value = "/board/addok", method = RequestMethod.POST)
 	public String addPostOK(BoardVO vo) {
@@ -61,6 +63,25 @@ public class BoardController {
 		return "redirect:../list";
 	}
 	
-	
+	@RequestMapping(value = "/board/gradeBoard/1", method = RequestMethod.GET)
+	public String gradeBoard1(Model model) {
+		model.addAttribute("list", boardService.getGrade1BoardList());
+		return "grade1";
+	}
+	@RequestMapping(value = "/board/gradeBoard/2", method = RequestMethod.GET)
+	public String gradeBoard2(Model model) {
+		model.addAttribute("list", boardService.getGrade2BoardList());
+		return "grade2";
+	}
+	@RequestMapping(value = "/board/gradeBoard/3", method = RequestMethod.GET)
+	public String gradeBoard3(Model model) {
+		model.addAttribute("list", boardService.getGrade3BoardList());
+		return "grade3";
+	}
+	@RequestMapping(value = "/board/gradeBoard/4", method = RequestMethod.GET)
+	public String gradeBoard4(Model model) {
+		model.addAttribute("list", boardService.getGrade4BoardList());
+		return "grade4";
+	}
 }
 

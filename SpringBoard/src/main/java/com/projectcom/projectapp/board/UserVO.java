@@ -4,6 +4,10 @@ public class UserVO {
 	private String userid;
 	private String password;
 	private String username;
+	private String gender;
+	private String email;
+	private String blogurl;
+	private String detail;
 	
 	public String getUserid() {
 		return userid;
@@ -27,6 +31,38 @@ public class UserVO {
 	
 	public void setUsername(String username) {
 		this.username = username;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getBlogurl() {
+		return blogurl;
+	}
+
+	public void setBlogurl(String blogurl) {
+		this.blogurl = blogurl;
+	}
+
+	public String getDetail() {
+		return detail;
+	}
+
+	public void setDetail(String detail) {
+		this.detail = detail;
 	}
 	
 }

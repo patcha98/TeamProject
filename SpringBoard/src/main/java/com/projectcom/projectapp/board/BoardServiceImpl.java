@@ -25,6 +25,26 @@ public class BoardServiceImpl implements BoardService{
 	public List<BoardVO> getBoardList(){
 		return boardDAO.getBoardList();
 	}
+	
+	@Override
+	public List<BoardVO> getGrade1BoardList(){
+		return boardDAO.getGrade1BoardList();
+	}
+	
+	@Override
+	public List<BoardVO> getGrade2BoardList(){
+		return boardDAO.getGrade2BoardList();
+	}
+	
+	@Override
+	public List<BoardVO> getGrade3BoardList(){
+		return boardDAO.getGrade3BoardList();
+	}
+	
+	@Override
+	public List<BoardVO> getGrade4BoardList(){
+		return boardDAO.getGrade4BoardList();
+	}
 
 	@Override
 	public int deleteBoard(int id) {

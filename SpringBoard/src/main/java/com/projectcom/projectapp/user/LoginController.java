@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.projectcom.projectapp.board.BoardVO;
 import com.projectcom.projectapp.board.UserVO;
 import com.projectcom.projectapp.user.UserServiceImpl;
 
@@ -17,6 +18,20 @@ public class LoginController {
 	
 	@Autowired
 	UserServiceImpl service;
+	
+	@RequestMapping(value="/signin", method= RequestMethod.GET)
+	public String singin() {
+		return "signin";
+	}
+	@RequestMapping(value = "/signok", method = RequestMethod.POST)
+	public String signOK(UserVO vo) {
+		int i = service.insertUser(vo);
+		if(i == 0)
+			System.out.println("데이터 추가 실패!");
+		else
+			System.out.println("데이터 추가 성공!");
+		return "redirect:login";
+	}
 	
 	@RequestMapping(value="/login", method= RequestMethod.GET)
 	public String login(String t, Model model) {

@@ -20,7 +20,8 @@
 <div><label>User ID: </label><input type='text' name='userid' /></div>
 <div><label>Password: </label>
 	<input type='password' name='password' /></div>
-<button type='submit'>login</button>
+<button type='submit'>로그인</button>
+<button type='button' onclick="location.href='../login/signin'">회원가입</button>
 </form>
 </div> 
 </body>

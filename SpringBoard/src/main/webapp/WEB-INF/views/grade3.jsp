@@ -36,12 +36,11 @@
 </head>
 <body>
 
-<h1>전체 자유게시판</h1>
-<button type="button" onclick="location.href='gradeBoard/1'">1학년 게시글</button>
-<button type="button" onclick="location.href='gradeBoard/2'">2학년 게시글</button>
-<button type="button" onclick="location.href='gradeBoard/3'">3학년 게시글</button>
-<button type="button" onclick="location.href='gradeBoard/4'">4학년 게시글</button>
-
+<h1>3학년 게시글 모음</h1>
+<button type="button" onclick="location.href='../gradeBoard/1'">1학년 게시글</button>
+<button type="button" onclick="location.href='../gradeBoard/2'">2학년 게시글</button>
+<button type="button" onclick="location.href='../gradeBoard/4'">4학년 게시글</button>
+<button type="button" onclick="location.href='../list'">전체게시글</button>
 <table id="list" width="90%">
 <tr>
 	<th>Id</th>
@@ -61,7 +60,7 @@
 		<td>${u.category}</td>
 		<td>${u.title}</td>
 		<td>${u.writer}</td>
-		<td><a href="gradeBoard/${u.grade}">${u.grade}</a></td>
+		<td>${u.grade}</td>
 		<td>${u.email}</td>
 		<td>${u.content}</td>
 		<td>${u.regdate}</td>
@@ -70,8 +69,8 @@
 	</tr>
 </c:forEach>
 </table>
-<br><br/><button type="button" onclick="location.href='add'">새글쓰기</button>
-<button type="button" onclick="location.href='../login/logout'">로그아웃</button>
+<br><br/>
+<button type="button" onclick="location.href='../add'">새글쓰기</button>
 
 </body>
 </html>
