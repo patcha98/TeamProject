@@ -52,7 +52,7 @@ public class LoginController {
 				session.setAttribute("login", loginvo);
 				returnURL = "redirect:/board/list"; // 로그인 실패했다는 뜻			
 		}else {
-			System.out.println("로그인 실패!");
+			System.out.println("로그인 실패!!!");
 				returnURL = "redirect:/login/login"; // 로그인 실패했다는 뜻
 		}
 		return returnURL;
