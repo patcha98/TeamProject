@@ -47,5 +47,8 @@ padding: 15px;
 
 <div>
 </div>
+<div style='width:100%;text-align:center;padding-top:100px'>
+<img src='../img/Handong.png' height="100" width =50%>
+</div>
 </body>
 </html>
