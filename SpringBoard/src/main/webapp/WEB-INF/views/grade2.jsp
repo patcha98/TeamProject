@@ -7,6 +7,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>free board</title>
 <style>
+img, label { display:inline-block;}
+
 #b_group button{ border: 1px solid skyblue; 
 background-color: rgba(0,0,0,0); 
 color: skyblue; padding: 5px; } 
@@ -101,5 +103,9 @@ padding: 15px;
 <button type="button" onclick="location.href='../add'">새글쓰기</button>
 
 </div>
+<div style='width:100%;text-align:center;padding-top:100px'>
+<img src='../../img/Handong.png' height="100" width =50%>
+</div>
+
 </body>
 </html>

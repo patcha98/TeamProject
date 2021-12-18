@@ -37,6 +37,8 @@ padding: 15px;
 	<input type="submit" value="수정하기"/>
 	<button type="button" onclick="location.href='../list'">취소하기</button>
 </form:form>
-
+<div style='width:100%;text-align:center;padding-top:100px'>
+<img src='../../img/Handong.png' height="100" width =50%>
+</div>
 </body>
 </html>
