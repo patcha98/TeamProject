@@ -8,13 +8,34 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
+#foot {
+background-color : #B2DDEF;
+color:#ffffff;
+padding: 15px;
+
+}
+
+#top {
+background-color : #B2DDEF;
+color:#ffffff;
+padding: 15px;
+
+}
 	img, label { display:inline-block;}
 	label{ width:130px}
-	button{ background-color:blue; color:white;font-size:15px}
+	button{ background-color: #4aa8d8;; color:white;font-size:15px}
 </style>
 </head> 
 <body>
+
+<div class="container wrapper">
+<div id="top"> 
+<h1>HIS BOARD</h1>
+<h2>LOGIN</h2>
+</div>
+
 <div style='width:100%;text-align:center;padding-top:100px'>
+<img src='../img/Handong.png' height="200">
 <img src='../img/hunseong.jpg' height="250">
 <form method="post" action="loginOk">
 <div><label>User ID: </label><input type='text' name='userid' /></div>

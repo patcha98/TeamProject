@@ -7,11 +7,23 @@
 <head>
 <meta charset="UTF-8">
 <title>Edit Form</title>
+<style>
+#top {
+background-color : #B2DDEF;
+color:#ffffff;
+padding: 15px;
+
+}
+</style>
 </head>
 <body>
 
 
-<h1>수정하기</h1>
+<div id="top"> 
+<h1>HIS BOARD</h1>
+<h2>수정하기 </h2>
+</div>
+
 <form:form commandName="boardVO" method="POST" action="../editok">
 	<form:hidden path="seq" />
 	<table id = "edit">
