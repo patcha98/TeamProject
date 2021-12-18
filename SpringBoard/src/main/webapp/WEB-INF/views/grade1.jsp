@@ -107,8 +107,8 @@ background-color: skyblue;
 </div>
 
 <div style='width:100%;text-align:center;padding-top:100px'>
-<img src='../img/Handong.png' height="200">
-<img src='../img/hunseong.jpg' height="250">
+<img src='../../img/Handong.png' height="200">
+<img src='../../img/hunseong.jpg' height="250">
 </div>
 
 </body>
