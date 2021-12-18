@@ -7,6 +7,26 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>free board</title>
 <style>
+#foot {
+background-color : #B2DDEF;
+color:#ffffff;
+padding: 15px;
+
+}
+#b_group button{ border: 1px solid skyblue; 
+background-color: rgba(0,0,0,0); 
+color: skyblue; padding: 5px; } 
+#btn_group button:hover{ 
+color:white; 
+background-color: skyblue; 
+}
+#top {
+background-color : #B2DDEF;
+color:#ffffff;
+padding: 15px;
+
+}
+
 #list {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -23,7 +43,7 @@
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
-  background-color: #006bb3;
+    background-color: #4aa8d8;
   color: white;
 }
 </style>
@@ -35,12 +55,17 @@
 </script>
 </head>
 <body>
-
-<h1>전체 자유게시판</h1>
+<div id="top"> 
+<h1>HIS BOARD</h1>
+<h2>전체 자유게시판 </h2>
+</div>
+<div id="b_group">
 <button type="button" onclick="location.href='gradeBoard/1'">1학년 게시글</button>
 <button type="button" onclick="location.href='gradeBoard/2'">2학년 게시글</button>
 <button type="button" onclick="location.href='gradeBoard/3'">3학년 게시글</button>
 <button type="button" onclick="location.href='gradeBoard/4'">4학년 게시글</button>
+</div>
+
 
 <table id="list" width="90%">
 <tr>
@@ -70,8 +95,13 @@
 	</tr>
 </c:forEach>
 </table>
+<br><br/>
+<div id = "foot">
 <br><br/><button type="button" onclick="location.href='add'">새글쓰기</button>
 <button type="button" onclick="location.href='../login/logout'">로그아웃</button>
+</div>
+
+
 
 </body>
 </html>

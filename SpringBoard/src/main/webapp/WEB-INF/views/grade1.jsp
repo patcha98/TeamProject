@@ -4,9 +4,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta charset="UTF-8" http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>free board</title>
 <style>
+img, label { display:inline-block;}
+	label{ width:130px}
+#top {
+background-color : #B2DDEF;
+color:#ffffff;
+padding: 15px;
+
+}
+#foot {
+background-color : #B2DDEF;
+color:#ffffff;
+padding: 15px;
+
+}
 #list {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -23,9 +37,18 @@
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
-  background-color: #006bb3;
+  background-color: #4aa8d8;
   color: white;
 }
+
+#b_group button{ border: 1px solid skyblue; 
+background-color: rgba(0,0,0,0); 
+color: skyblue; padding: 5px; } 
+#btn_group button:hover{ 
+color:white; 
+background-color: skyblue; 
+}
+
 </style>
 <script>
 	function delete_ok(id){
@@ -36,11 +59,18 @@
 </head>
 <body>
 
-<h1>1학년 게시글 모음</h1>
-<button type="button" onclick="location.href='../gradeBoard/2'">2학년 게시글</button>
-<button type="button" onclick="location.href='../gradeBoard/3'">3학년 게시글</button>
-<button type="button" onclick="location.href='../gradeBoard/4'">4학년 게시글</button>
-<button type="button" onclick="location.href='../list'">전체게시글</button>
+<div class="container wrapper">
+<div id="top"> 
+<h1>HIS BOARD</h1>
+<h2>1학년 게시글 모음</h2>
+</div>
+<div id="b_group">
+<button type="button" onclick="location.href='../gradeBoard/2'">	2학년 게시글	</button>
+<button type="button" onclick="location.href='../gradeBoard/3'">	3학년 게시글	</button>
+<button type="button" onclick="location.href='../gradeBoard/4'">	4학년 게시글	</button>
+<button type="button" onclick="location.href='../list'">	전체게시글		</button>
+</div>
+
 <table id="list" width="90%">
 <tr>
 	<th>Id</th>
@@ -70,7 +100,16 @@
 </c:forEach>
 </table>
 <br><br/>
+
+<div id = "foot">
 <button type="button" onclick="location.href='../add'">새글쓰기</button>
+
+</div>
+
+<div style='width:100%;text-align:center;padding-top:100px'>
+<img src='../img/Handong.png' height="200">
+<img src='../img/hunseong.jpg' height="250">
+</div>
 
 </body>
 </html>
