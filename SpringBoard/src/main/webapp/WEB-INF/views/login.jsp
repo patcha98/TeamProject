@@ -37,11 +37,19 @@ padding: 15px;
 <div style='width:100%;text-align:center;padding-top:100px'>
 <img src='../img/Handong.png' height="200">
 <img src='../img/hunseong.jpg' height="250">
+<<<<<<< HEAD
 
 <form method="post" action="loginOk" name="login_form">
 <div><label>User ID: </label><input type='text' id='id_val' name='userid' /></div>
 <div><label>Password: </label><input type='password' id='pw_val' name='password' /></div>
 <input type="button" value="로그인" onclick="check_input()" style="background-color: #4aa8d8;; color:white;font-size:15px"/>
+=======
+<form method="post" action="loginOk"><br>
+<div><label>User ID: </label><input type='text' name='userid' /></div><br>
+<div><label>Password: </label>
+	<input type='password' name='password' /></div>
+<br><button type='submit'>로그인</button>
+>>>>>>> branch 'main' of https://github.com/patcha98/TeamProject.git
 <button type='button' onclick="location.href='../login/signin'">회원가입</button>
 </form>
 

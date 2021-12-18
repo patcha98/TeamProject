@@ -34,29 +34,54 @@ padding: 15px;
 <h2>회원가입 </h2>
 </div>
 
+<<<<<<< HEAD
 
 <form action="signok" method="post" name="signin_form">
+=======
+<form action="signok" method="post">
+>>>>>>> branch 'main' of https://github.com/patcha98/TeamProject.git
 	<table id="edit">
+<<<<<<< HEAD
 		<tr><td>아이디:</td><td><input type="text" id="id_val" name="userid" /></td></tr>
 		<tr><td>이름:</td><td><input type="text" id="name_val" name="username"/></td></tr>
 		<tr><td>비밀번호:</td><td><input type="text" id="pw_val" name="password"/></td></tr>
 		<tr><td>성별:</td><td>
 			여자<input type="radio" id="gen_val" name="gender" value="woman">
 			남자<input type="radio" id="gen_val" name="gender" value="man">
+=======
+		<tr><td>아이디:</td><td><input type="text" name="userid"/></td></tr>
+		<br><tr><td>이름:</td><td><input type="text" name="username"/></td></tr>
+		<br><tr><td>비밀번호:</td><td><input type="text" name="password"/></td></tr>
+		<br><tr><td>성별:</td><td>
+			여자<input type="radio" id="Woman" name="gender" value="woman">
+			남자<input type="radio" id="Man" name="gender" value="man">
+>>>>>>> branch 'main' of https://github.com/patcha98/TeamProject.git
 		</td></tr>
+<<<<<<< HEAD
 		<tr><td>이메일:</td><td><input type="text" id="email_val" name="email"/></td></tr>
 		<tr><td>블로그URL:</td><td><input type="text" id="blog_val" name="blogurl"/></td></tr>
 		<tr><td>자기소개:</td><td><textarea cols="50" rows="5" id="con_val" name="detail"></textarea></td></tr>
+=======
+		<br><tr><td>이메일:</td><td><input type="text" name="email"/></td></tr>
+		<br><tr><td>블로그URL:</td><td><input type="text" name="blogurl"/></td></tr>
+		<br><tr><td>자기소개:</td><td><textarea cols="50" rows="5" name="detail"></textarea></td></tr>
+>>>>>>> branch 'main' of https://github.com/patcha98/TeamProject.git
 	</table>
 	<div id="b_group">
+<<<<<<< HEAD
 		<input type="button" value="회원등록하기" onclick="check_input()" style="border: 1px solid skyblue; 
 background-color: rgba(0,0,0,0); 
 color: skyblue; padding: 5px;"/>
 		<button type="reset">리셋하기</button>
 		<button type="button" onclick="location.href='../login/login'">취소하기</button>
+=======
+	<br><button type="submit">회원등록하기</button>
+	<button type="reset">리셋하기</button>
+	<button type="button" onclick="location.href='../login/login'">취소하기</button>
+>>>>>>> branch 'main' of https://github.com/patcha98/TeamProject.git
 	</div>
 </form>
-<div id = "foot">
+<br><div id = "foot">
 HANDONG UNIVERSITY
 </div>
 <<<<<<< HEAD
